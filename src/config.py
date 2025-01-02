@@ -57,7 +57,7 @@ class ProxyConfig:
         ]
 
         self.PROTOCOL_CONFIG_LIMITS = {
-            "min": 5,
+            "min": 1,
             "max": 15
         }
 
@@ -70,9 +70,9 @@ class ProxyConfig:
             "trojan://": {"min_configs": self.PROTOCOL_CONFIG_LIMITS["min"], "max_configs": self.PROTOCOL_CONFIG_LIMITS["max"]}
         }
 
-        self.MIN_CONFIGS_PER_CHANNEL = 5
+        self.MIN_CONFIGS_PER_CHANNEL = 1
         self.MAX_CONFIGS_PER_CHANNEL = 30
-        self.MAX_CONFIG_AGE_DAYS = 7
+        self.MAX_CONFIG_AGE_DAYS = 365
         self.CHANNEL_RETRY_LIMIT = 3
         self.CHANNEL_ERROR_THRESHOLD = 0.5
 
